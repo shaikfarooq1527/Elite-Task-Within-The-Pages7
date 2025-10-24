@@ -1,0 +1,239 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #170C3A; 
+    color: #fff;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo-img {
+    height: 40px; 
+    filter: brightness(0) invert(1); 
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 0;
+}
+
+.sign-in-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sign-in-btn:hover{
+    background-color: #0b012c;
+  border-color: #0b012c;
+}
+
+
+.contact-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 5%;
+    gap: 40px;
+}
+
+
+.contact-info {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.info-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.info-description {
+    font-size: 1.1rem;
+    color: #ccc;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+
+.contact-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    background-color: #351C75; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.detail-value {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+.contact-form-container {
+    flex: 1;
+    background-color: #1F1550; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #351C75; 
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    resize: none; 
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: 0 0 0 2px #4A1D9A;
+}
+
+.submit-btn {
+    background-color: #4A1D9A; 
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #30176D;
+}
+
+
+@media (max-width: 1024px) {
+    .contact-section {
+        flex-direction: column; 
+        margin: 30px auto;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .info-description {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-bottom: 20px;
+        
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .sign-in-btn {
+        margin-top: 5px;
+    }
+
+    
+    .contact-details-grid {
+        grid-template-columns: 1fr; 
+        text-align: left;
+        padding: 0 10%;
+    }
+
+    .contact-info {
+        padding: 0 5%;
+    }
+
+    .detail-card {
+        align-items: flex-start;
+    }
+    
+    .contact-form-container {
+        margin: 0 5%;
+        padding: 30px 20px;
+    }
+}
